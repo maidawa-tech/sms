@@ -1,0 +1,206 @@
+:root {
+      --primary-color: #679767;
+      --dark-color: #343a40;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .login-container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    /* Left Description Section */
+    .description-section {
+      flex: 2;
+      background: linear-gradient(135deg, var(--primary-color) 0%, #4a7c4a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      color: white;
+    }
+
+    .description-content {
+      max-width: 600px;
+    }
+
+    .description-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .description-content > p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feature-icon {
+      background: rgba(255, 255, 255, 0.2);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-icon i {
+      font-size: 1.3rem;
+      color: white;
+    }
+
+    .feature-text h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .feature-text p {
+      margin: 0;
+      opacity: 0.9;
+      line-height: 1.5;
+    }
+
+    /* Right Login Section */
+    .login-section {
+      flex: 1;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo i {
+      font-size: 42px;
+      color: var(--primary-color);
+    }
+
+    .logo h1 {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--dark-color);
+      margin-top: 10px;
+    }
+
+    /* Increased height for input fields */
+    .form-control {
+      background-color: #f8fff5;
+      border: 1px solid #dcdcdc;
+      height: 60px;
+      font-size: 18px;
+      padding: 0.75rem 1rem;
+    }
+
+    .input-group-text {
+      background-color: #f8fff5;
+      border: 1px solid #dcdcdc;
+      font-size: 20px;
+      padding: 0 1rem;
+      height: 60px; /* Added to match input height */
+    }
+
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 0.25rem rgba(103, 151, 103, 0.25);
+    }
+
+    /* Increased height for login button */
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 18px;
+      font-size: 18px;
+      border-radius: 8px;
+      height: 60px;
+    }
+
+    .btn-primary:hover {
+      background-color: #5a875a;
+    }
+
+    .forgot-password {
+      display: block;
+      margin-top: 10px;
+      text-align: right;
+      font-size: 14px;
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #6c757d;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .login-container {
+        flex-direction: column;
+      }
+      .description-section {
+        min-height: 40vh;
+        padding: 40px 20px;
+      }
+      .description-content h2 {
+        font-size: 2rem;
+      }
+      .description-content > p {
+        font-size: 1rem;
+      }
+      .login-section {
+        padding: 30px;
+      }
+    }
+     
+    .input-group-text i {
+      color: var(--primary-color);
+    }
+
+    .logo-img {
+      width: 80px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    
+    /* Custom styles for alerts */
+    .alert {
+      margin-bottom: 20px;
+    }

@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('terms', function (Blueprint $table) {
+            $table->bigIncrements('term_id');
+            $table->string('term_name', 50);
+            $table->unsignedBigInteger('session_id')->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
+            $table->boolean('is_active')->default(false);
+            $table->timestamps();
+
+            // Allow same term name in different sessions
+            $table->unique(['term_name', 'session_id'], 'unique_term_session');
+
+            $table->foreign('session_id')
+                  ->references('session_id')
+                  ->on('academic_sessions')
+                  ->onDelete('set null');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('terms');
+    }
+};
