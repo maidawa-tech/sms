@@ -35,7 +35,7 @@
     <section class="description-section">
       <div class="description-content">
         <h2>Streamline Student Results Compilation</h2>
-        <p><span style="color: #FFD700; font-weight: bold; letter-spacing: 1px;">ResultIgniter</span> provides educators with powerful tools to efficiently compile, analyze, and distribute student results.</p>
+        <p><span style="color: #FFD700; font-weight: bold; letter-spacing: 1px;">Sirajix</span> provides educators with powerful tools to efficiently compile, analyze, and distribute student results.</p>
 
         <div class="features">
           <div class="feature">

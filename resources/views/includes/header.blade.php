@@ -2,11 +2,11 @@
     <div class="logo-container">
         {{-- Logo Image --}}
         <div class="logo-icon">
-            <img src="{{ asset('images/resultIG.png') }}" alt="ResultIgniter Logo">
+            <img src="{{ asset('images/resultIG.png') }}" alt="Sirajix Logo">
         </div>
 
         {{-- Logo Text --}}
-        <div class="logo-text tangerine-regular">ResultIgniter</div>
+        <div class="logo-text tangerine-regular">Sirajix</div>
 
         {{-- Sidebar Toggle --}}
         <button class="toggle-btn" id="toggleSidebar">
